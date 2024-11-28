@@ -1,0 +1,497 @@
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+@mixin project-button-properties {
+  border: 1px solid #222222;
+  background-color: #f3f5f6;
+  /*color: #81d4fa;*/
+  color: #006db5;
+  border-radius: 0.3rem;
+}
+
+@mixin project-button-hover-properties {
+  /*background-color: #006db5;*/
+  background-color: #e0e0e0;
+  color: #006db5;
+}
+
+@mixin box-adjustment() {
+  box-sizing: border-box;
+}
+
+.websites-div {
+  padding: 1rem 0;
+  margin: 3rem 3rem 0 3rem;
+
+  &__headline {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__link {
+  }
+
+  &__back-button {
+    width: 9rem;
+    height: 2.3rem;
+    @include project-button-properties();
+    font-size: 1.1rem;
+    margin-left: 10rem;
+  }
+
+  &__back-button:hover,
+  &__soldi-bank-button:hover,
+  &__italiener-button:hover {
+    @include project-button-hover-properties();
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  &__websites-overview-div {
+    @include gray-border-for-section();
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  &__website-project {
+    @include column-flex-direction();
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.3rem #e0e0e0;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-radius: 0.1rem;
+  }
+
+  &__project-headline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__img,
+  &__img-half {
+    height: 23rem;
+    width: auto;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__soldi-bank-button,
+  &__italiener-button {
+    width: 10rem;
+    height: 2.3rem;
+    @include project-button-properties();
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .websites-div {
+    padding: 3rem 0 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 7rem;
+      height: 2rem;
+      @include project-button-properties();
+      font-size: 1.3rem;
+      margin: 3rem 0 3rem 10%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      display: flex;
+
+      align-items: center;
+      margin-top: 1rem;
+      padding: 2rem 1.5%;
+      border-width: 0.5rem;
+      column-gap: 1.5rem;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 2rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 15rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-half {
+      height: auto;
+      width: 50rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 9.5rem;
+      height: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .websites-div {
+    padding: 3rem 0 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 7rem;
+      height: 2rem;
+      @include project-button-properties();
+      font-size: 1.3rem;
+      margin: 2rem 0 3rem 10%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      display: flex;
+
+      align-items: center;
+      margin-top: 1rem;
+      padding: 2rem 1.5%;
+      border-width: 0.5rem;
+      column-gap: 1.5rem;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 1.5rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 15rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img-half {
+      height: auto;
+      width: 50rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 9.5rem;
+      height: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .websites-div {
+    padding: 2rem 0 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 2rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 7rem;
+      height: 2rem;
+      @include project-button-properties();
+      font-size: 1.3rem;
+      margin: 2rem 0 3rem 10%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      display: flex;
+
+      align-items: center;
+      margin-top: 1rem;
+      padding: 2rem 2%;
+      border-width: 0.4rem;
+      column-gap: 1.5rem;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 1.5rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 15rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img-half {
+      height: auto;
+      width: 90%;
+      max-width: 50rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 9.5rem;
+      height: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .websites-div {
+    padding: 1.5rem 0 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 2rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 7rem;
+      height: 2rem;
+      @include project-button-properties();
+      font-size: 1.3rem;
+      margin: 2rem 0 3rem 7%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      @include column-flex-direction();
+      margin-top: 1rem;
+      padding: 2rem 0;
+      border-width: 0.4rem;
+      row-gap: 1rem;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 2rem 0;
+      width: 90%;
+    }
+
+    &__project-headline {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 20rem;
+      margin-bottom: 2rem;
+    }
+
+    &__img-half {
+      height: auto;
+      width: 90%;
+      margin-bottom: 1.5rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 9.5rem;
+      height: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .websites-div {
+    padding: 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 1.7rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 6rem;
+      height: 1.7rem;
+      @include project-button-properties();
+      font-size: 1rem;
+      margin: 1rem 0 2rem 5%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      @include column-flex-direction();
+      margin-top: 1rem;
+      padding: 1rem 0;
+      border-width: 0.3rem;
+      row-gap: 0.7rem;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 1.5rem 0;
+      width: 90%;
+    }
+
+    &__project-headline {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 15rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-half {
+      height: auto;
+      width: 90%;
+      margin-bottom: 1.5rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 8rem;
+      height: 1.7rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .websites-div {
+    padding: 1rem 0;
+    margin: 1rem 3% 0 3%;
+
+    &__headline {
+      font-size: 1.5rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      width: 5rem;
+      height: 1.5rem;
+      @include project-button-properties();
+      font-size: 0.8rem;
+      margin: 1rem 0 1rem 5%;
+    }
+
+    &__icon {
+      width: 1rem;
+      height: auto;
+    }
+
+    &__websites-overview-div {
+      @include column-flex-direction();
+      margin-top: 1rem;
+      padding: 0.5rem 0;
+      border-width: 0.3rem;
+      row-gap: 0;
+    }
+
+    &__website-project {
+      margin: 0.5rem 0;
+      padding: 1rem 0;
+      width: 90%;
+    }
+
+    &__project-headline {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img,
+    &__img-half {
+      height: auto;
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+
+    &__soldi-bank-button,
+    &__italiener-button {
+      width: 7rem;
+      height: 1.7rem;
+      font-size: 0.8rem;
+    }
+  }
+}

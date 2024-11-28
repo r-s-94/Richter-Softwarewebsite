@@ -1,0 +1,385 @@
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin column-flex-direction-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  @include gray-border-for-section();
+  @include column-flex-direction();
+  padding: 0 5% 3rem 5%;
+  margin: 0 3rem 3rem 3rem;
+
+  &__headline {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  &__contact-div {
+    @include column-flex-direction-left-side();
+    background-color: white;
+    width: 100%;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-radius: 0.3rem;
+  }
+
+  &__contact-div-headline {
+    font-size: 1.6rem;
+    margin: 1rem 0 0 5%;
+  }
+
+  &__text {
+    margin: 3rem 0 0 5%;
+    font-size: 1.5rem;
+  }
+
+  &__mail-address {
+    margin: 1rem 0 1rem 5%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    color: #039be5;
+  }
+
+  &__to-top {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .contact-section {
+    padding: 1rem 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 3rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1.5rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 1.4rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 5%;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1.5em;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .contact-section {
+    padding: 1rem 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 3rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1.5rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 1.4rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 5%;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1.5em;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contact-section {
+    padding: 0.5rem 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.4rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 3rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1.5rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 1.4rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 5%;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1.5em;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-section {
+    padding: 0 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.4rem;
+
+    &__headline {
+      font-size: 1.7rem;
+      margin-top: 2rem;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 2rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1.3rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 1.2rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0 1rem 1%;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 4%;
+    }
+
+    &__link {
+      font-size: 1.2rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1.3em;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-section {
+    padding: 0 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.3rem;
+
+    &__headline {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 2rem 0;
+      padding: 1rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1.1rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 1rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0 1rem 1%;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 3%;
+    }
+
+    &__link {
+      font-size: 1rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1.1em;
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contact-section {
+    padding: 0 3% 3rem 3%;
+    margin: 0 3% 3rem 3%;
+    border-width: 0.3rem;
+
+    &__headline {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+
+    &__contact-div {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0.5rem 0;
+    }
+
+    &__contact-div-headline {
+      font-size: 1rem;
+      margin: 1rem 0 0 5%;
+    }
+
+    &__text {
+      margin: 1rem 0 0 5%;
+      font-size: 0.9rem;
+    }
+
+    &__mail-address {
+      margin: 1rem 0 1rem 1%;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 2rem;
+      height: auto;
+      margin: 0 1rem 0 3%;
+    }
+
+    &__link {
+      font-size: 0.9rem;
+      color: #039be5;
+    }
+
+    &__to-top {
+      font-size: 1em;
+      margin-top: 0.5rem;
+    }
+  }
+}

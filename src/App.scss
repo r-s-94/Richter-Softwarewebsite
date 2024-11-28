@@ -1,0 +1,22 @@
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-div {
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  @include center-content();
+}
+
+.button:hover {
+  cursor: pointer;
+}

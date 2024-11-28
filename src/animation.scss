@@ -1,0 +1,409 @@
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin: -6rem 7rem 0 5rem;
+  transform-style: preserve-3d;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-name: rotate-Square;
+
+  border: 1px solid white;
+}
+
+#div-animation {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+}
+
+@keyframes rotate-Square {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+
+.front {
+  @include center-content();
+  transform: translateZ(50px);
+}
+
+.back {
+  transform: translateZ(-50px);
+}
+
+.left {
+  @include center-content();
+  margin-left: -50px;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  @include center-content();
+  margin-left: 50px;
+  transform: rotateY(90deg);
+}
+
+.top {
+  @include center-content();
+  margin-top: -50px;
+  transform: rotateX(90deg);
+}
+
+.bottom {
+  @include center-content();
+  margin-top: 50px;
+  transform: rotateX(-90deg);
+}
+
+@media screen and (min-width: 1700px) {
+  .box {
+    margin: -6rem 13rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(50px);
+  }
+
+  .back {
+    transform: translateZ(-50px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -50px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 50px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -50px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 50px;
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .box {
+    margin: -6rem 7rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(50px);
+  }
+
+  .back {
+    transform: translateZ(-50px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -50px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 50px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -50px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 50px;
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .box {
+    margin: 6rem 9rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(50px);
+  }
+
+  .back {
+    transform: translateZ(-50px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -50px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 50px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -50px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 50px;
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    margin: 6rem 9rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 75px;
+    height: 75px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(37px);
+  }
+
+  .back {
+    transform: translateZ(-37px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -37px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 37px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -37px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 37px;
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    margin: 2.5rem 4rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 55px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(27px);
+  }
+
+  .back {
+    transform: translateZ(-27px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -27px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 27px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -27px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 27px;
+    transform: rotateX(-90deg);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .box {
+    margin: 2.5rem 1rem 0 -10rem;
+    transform-style: preserve-3d;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-Square;
+
+    border: 1px solid white;
+  }
+
+  #div-animation {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.5rem;
+    position: absolute;
+  }
+
+  .front {
+    @include center-content();
+    transform: translateZ(17px);
+  }
+
+  .back {
+    transform: translateZ(-17px);
+  }
+
+  .left {
+    @include center-content();
+    margin-left: -17px;
+    transform: rotateY(-90deg);
+  }
+
+  .right {
+    @include center-content();
+    margin-left: 17px;
+    transform: rotateY(90deg);
+  }
+
+  .top {
+    @include center-content();
+    margin-top: -17px;
+    transform: rotateX(90deg);
+  }
+
+  .bottom {
+    @include center-content();
+    margin-top: 17px;
+    transform: rotateX(-90deg);
+  }
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$font-family-art1: "Orbitron", sans-serif;
+$font-family-art2: "Roboto", sans-serif;
+$gray-background-color: #dbdbdb;
+//$black-background-color: #222222;
+$black-background-color: black;
+$border-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin column-flex-direction-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@mixin row-flex-direction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+@mixin blue-border-for-section {
+  border: 0.5rem solid #039be5;
+  border-radius: 0.3rem;
+  @include box-adjustment();
+}
+
+@mixin headline-button-properties {
+  border: 0.1rem solid white;
+  background-color: #222222;
+  /*color: #81d4fa;*/
+  color: #80d8ff;
+  border-radius: 0.3rem;
+}
+
+@mixin headline-button-hover-properties {
+  background-color: white;
+  border-color: black;
+}
+
+@mixin project-button-properties {
+  border: 1px solid #222222;
+  background-color: #f3f5f6;
+  /*color: #81d4fa;*/
+  color: #006db5;
+  border-radius: 0.3rem;
+}
+
+@mixin project-button-hover-properties {
+  background-color: #006db5;
+  border-color: white;
+  color: white;
+}
+
+@mixin box-adjustment() {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f5f6;
+}

@@ -1,0 +1,797 @@
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+@mixin project-button-properties {
+  border: 1px solid #222222;
+  background-color: #f3f5f6;
+  /*color: #81d4fa;*/
+  color: #006db5;
+  border-radius: 0.3rem;
+}
+
+@mixin project-button-hover-properties {
+  /*background-color: #006db5;*/
+  background-color: #e0e0e0;
+  color: #006db5;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-aplications-div {
+  margin: 3rem;
+
+  &__headline {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__link {
+  }
+
+  &__back-button {
+    @include project-button-properties();
+    width: 9rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+    margin: 3rem 0 3rem 10rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  &__web-aplications-overview-div {
+    @include gray-border-for-section();
+    @include column-flex-direction();
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  &__small-web-aplication-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__big-web-aplication-div {
+    width: 100%;
+  }
+
+  &__web-aplication-project {
+    @include column-flex-direction();
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.3rem #e0e0e0;
+    margin: 2rem 0;
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.1rem;
+  }
+
+  &__project-headline {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__img-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 3rem;
+    padding: 0 0 0 7rem;
+    margin: 0 0 1rem 0;
+  }
+
+  &__crm-img {
+    height: 20rem;
+    width: auto;
+    border-radius: 0.3rem;
+    border: 1px solid #e0e0e0;
+  }
+
+  &__img {
+    height: auto;
+    width: 13rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__note-button {
+    @include project-button-properties();
+    width: 10rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__joke-button {
+    @include project-button-properties();
+    width: 10rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__weather-button {
+    @include project-button-properties();
+    width: 10rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__online-shop-button {
+    @include project-button-properties();
+    width: 11rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__crm-program-button {
+    @include project-button-properties();
+    width: 14rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+  }
+
+  &__back-button:hover,
+  &__note-button:hover,
+  &__joke-button:hover,
+  &__weather-button:hover,
+  &__online-shop-button:hover,
+  &__crm-program-button:hover {
+    @include project-button-hover-properties();
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .web-aplications-div {
+    margin: 4rem 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 3rem 10%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.5rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 3rem 0 1.5rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 95%;
+      margin: 1.5rem 0 3rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 2.7rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-div {
+      width: 98%;
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0 1%;
+      margin: 0 0 2rem 4.5rem;
+      row-gap: 1.5rem;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+      max-width: 65rem;
+      margin: 0;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 17rem;
+      margin-bottom: 2rem;
+    }
+
+    &__note-button {
+      width: 10rem;
+      height: 2.1rem;
+      font-size: 1.3rem;
+    }
+
+    &__joke-button {
+      width: 10.5rem;
+      height: 2.1rem;
+      font-size: 1.3rem;
+    }
+
+    &__weather-button {
+      width: 11rem;
+      height: 2.1rem;
+      font-size: 1.3rem;
+    }
+
+    &__online-shop-button {
+      width: 12rem;
+      height: 2.1rem;
+      font-size: 1.3rem;
+    }
+
+    &__crm-program-button {
+      width: 13.5rem;
+      height: 2.3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .web-aplications-div {
+    margin: 3rem 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 3rem 10%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.5rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 3rem 0 1.3rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 95%;
+      margin: 1.3rem 0 3rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 2.5rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-div {
+      width: 98%;
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 0 1%;
+      margin: 0 0 2rem 4rem;
+      row-gap: 1.5rem;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+      max-width: 65rem;
+      margin: 0;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 15rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__note-button {
+      width: 9rem;
+      height: 2.1rem;
+      font-size: 1.2rem;
+    }
+
+    &__joke-button {
+      width: 9rem;
+      height: 2.1rem;
+      font-size: 1.2rem;
+    }
+
+    &__weather-button {
+      width: 10rem;
+      height: 2.1rem;
+      font-size: 1.2rem;
+    }
+
+    &__online-shop-button {
+      width: 11rem;
+      height: 2.1rem;
+      font-size: 1.2rem;
+    }
+
+    &__crm-program-button {
+      width: 13.5rem;
+      height: 2.3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .web-aplications-div {
+    margin: 3rem 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 2rem 7%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.4rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2rem 0 1.3rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 95%;
+      margin: 1.3rem 0 2rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 2rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-div {
+      width: 100%;
+      @include column-flex-direction();
+      padding: 0 1%;
+      margin: 0 0 1.7rem 0;
+      row-gap: 1.5rem;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+      max-width: 65rem;
+      margin: 0;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 12rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__note-button {
+      width: 8rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__joke-button {
+      width: 8rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__weather-button {
+      width: 8.5rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__online-shop-button {
+      width: 9rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    &__crm-program-button {
+      width: 13.5rem;
+      height: 2.3rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .web-aplications-div {
+    margin: 2rem 3%;
+
+    &__headline {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 7rem;
+      height: 2rem;
+      font-size: 1.1rem;
+      margin: 1.5rem 0 2rem 7%;
+    }
+
+    &__icon {
+      width: 1.6rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.4rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 90%;
+      @include column-flex-direction();
+      row-gap: 2rem;
+      margin: 2rem 0 1.3rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 90%;
+      margin: 1.3rem 0 2rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 2.5rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__img-div {
+      width: 100%;
+      @include column-flex-direction();
+      padding: 0 1%;
+      margin: 0 0 1.5rem 0;
+      row-gap: 1.5rem;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+      margin: 0;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 23rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__note-button {
+      width: 10rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+    }
+
+    &__joke-button {
+      width: 10rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+    }
+
+    &__weather-button {
+      width: 11rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+    }
+
+    &__online-shop-button {
+      width: 11rem;
+      height: 2.3rem;
+      font-size: 1.3rem;
+    }
+
+    &__crm-program-button {
+      width: 12.5rem;
+      height: 2.3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .web-aplications-div {
+    margin: 1.5rem 3%;
+
+    &__headline {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 7rem;
+      height: 2rem;
+      font-size: 1rem;
+      margin: 1rem 0 1.5rem 5%;
+    }
+
+    &__icon {
+      width: 1.5rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.3rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 90%;
+      @include column-flex-direction();
+      row-gap: 1.5rem;
+      margin: 1.5rem 0 1rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 90%;
+      margin: 1 0 1.5rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 2rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img-div {
+      width: 100%;
+      @include column-flex-direction();
+      padding: 0 1%;
+      margin: 0 0 1.3rem 0;
+      row-gap: 1rem;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+      margin: 0;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      max-width: 17rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__note-button {
+      width: 9rem;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+
+    &__joke-button {
+      width: 9rem;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+
+    &__weather-button {
+      width: 10rem;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+
+    &__online-shop-button {
+      width: 10rem;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+
+    &__crm-program-button {
+      width: 11.5rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .web-aplications-div {
+    margin: 1rem 3%;
+
+    &__headline {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    &__link {
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 6rem;
+      height: 1.8rem;
+      font-size: 0.9rem;
+      margin: 1rem 0 1.5rem 5%;
+    }
+
+    &__icon {
+      width: 1.3rem;
+      height: auto;
+    }
+
+    &__web-aplications-overview-div {
+      @include column-flex-direction();
+      padding: 0 1%;
+      border-width: 0.3rem;
+    }
+
+    &__small-web-aplication-div {
+      width: 90%;
+      @include column-flex-direction();
+      row-gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    &__big-web-aplication-div {
+      width: 90%;
+      margin: 1rem 0;
+    }
+
+    &__web-aplication-project {
+      margin: 0;
+      padding: 1.5rem 1%;
+    }
+
+    &__project-headline {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    &__img-div {
+      width: 100%;
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+      padding: 0 1%;
+      margin: 0 0 1rem 0;
+    }
+
+    &__crm-img {
+      height: auto;
+      width: 90%;
+    }
+
+    &__img {
+      height: auto;
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+
+    &__note-button {
+      width: 8rem;
+      height: 1.8rem;
+      font-size: 1rem;
+    }
+
+    &__joke-button {
+      width: 8rem;
+      height: 1.8rem;
+      font-size: 1rem;
+    }
+
+    &__weather-button {
+      width: 9rem;
+      height: 1.8rem;
+      font-size: 1rem;
+    }
+
+    &__online-shop-button {
+      width: 9rem;
+      height: 1.8rem;
+      font-size: 1rem;
+    }
+
+    &__crm-program-button {
+      width: 9.5rem;
+      height: 1.8rem;
+      font-size: 0.8rem;
+    }
+  }
+}
