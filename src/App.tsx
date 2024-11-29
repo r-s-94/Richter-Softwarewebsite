@@ -5,25 +5,20 @@ import Websites from "./component/websites/websites";
 import WebAplications from "./component/web-aplications/web-aplication";
 
 function App() {
-  const router = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <Roots />,
-      },
-      {
-        path: "websites",
-        element: <Websites />,
-      },
-      {
-        path: "web-aplications",
-        element: <WebAplications />,
-      },
-    ],
+  const router = createBrowserRouter([
     {
-      basename: "/Richter-Softwarewebsite/",
-    }
-  );
+      path: "/",
+      element: <Roots />,
+    },
+    {
+      path: "websites",
+      element: <Websites />,
+    },
+    {
+      path: "web-aplications",
+      element: <WebAplications />,
+    },
+  ]);
 
   return (
     <div id="oben" className="app-div">
