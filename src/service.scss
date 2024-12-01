@@ -14,600 +14,103 @@
 .service-div {
   @include gray-border-for-section();
   @include column-flex-direction();
-  width: 100%;
+  width: 95%;
   padding: 1rem 0 0 0;
+  margin: 0;
 
   &__headline {
     margin: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
+}
 
-  &__password-generator {
-    width: 100%;
-    padding-bottom: 3rem;
-    background-image: linear-gradient(#c0c0c0, white, white, #c0c0c0);
+@media screen and (min-width: 1700px) {
+  .service-div {
+    width: 98%;
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.5rem;
 
     &__headline {
-      @include column-flex-direction();
-      width: 45%;
-      margin: 2rem auto 0 auto;
-      padding: 1.3rem 0;
-      font-size: 1.7rem;
-      background-color: #f3f5f6;
-      border-radius: 0.3rem;
-      border: 1px solid #e0e0e0;
-    }
-
-    &__special-sign {
-      width: 15rem;
-    }
-
-    &__lock-sign {
-      width: 2rem;
-    }
-
-    &__output {
-      text-align: center;
-      font-size: 1.7rem;
-      margin-top: 3rem;
-    }
-
-    &__password {
-      /*color: #cc0606;*/
-      color: red;
-    }
-
-    &__main-div {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-top: 3rem;
-      column-gap: 1rem;
-    }
-
-    &__generally-password-div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 0;
-      row-gap: 1rem;
+      margin: 2rem 0 2.5rem 0;
+      padding: 0 3%;
       font-size: 1.5rem;
-      background-color: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 0.3rem;
-      margin: 0 10%;
     }
-
-    &__create-generally-password {
-      margin: 0.5rem 0;
-      font-size: 1.4rem;
-      padding: 0.7rem 1.5rem;
-    }
-
-    &__special-password-div {
-      @include column-flex-direction();
-      font-size: 1.5rem;
-      padding: 3rem 0;
-      margin: 0 10%;
-      background-color: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 0.3rem;
-    }
-
-    &__input-and-button-div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      column-gap: 1rem;
-      margin: 0.5rem 0;
-    }
-  }
-}
-
-.windows-pop-up-main-div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.windows-pop-up-message-div {
-  width: 40rem;
-  height: 13rem;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #9e9e9e;
-  border-radius: 0.3rem;
-  font-size: 1.3rem;
-  row-gap: 1rem;
-}
-
-/*span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
-
-input {
-  text-align: center;
-  width: 13rem;
-  height: 2.1rem;
-  font-size: 1.2rem;
-}
-
-.star-sign {
-  width: 2rem;
-}
-
-/*@media screen and (min-width: 1700px) {
-  .windows-pop-up-message-div {
-    width: 95%;
-    max-width: 45rem;
-    height: 10rem;
-    padding: 0 1rem;
-    font-size: 1.4rem;
-    row-gap: 1.5rem;
-  }
-
-  .close-button {
-    font-size: 1.2rem;
-  }
-
-  .password-generator-headline {
-    font-size: 2rem;
-    margin: 7rem auto 0 auto;
-    width: 95%;
-    max-width: 35rem;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 2.6rem;
-  }
-
-  .password-generator-main-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95%;
-    max-width: 80rem;
-    column-gap: 3rem;
-    margin: 5rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin: 0;
-    width: 100%;
-    padding: 1.3rem 3%;
-    box-sizing: border-box;
-    row-gap: 0.7rem;
-  }
-
-  .create-generally-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 23rem;
-    padding: 1rem 0;
-  }
-
-  input {
-    width: 90%;
-    height: 2.3rem;
-    font-size: 1.5rem;
-    max-width: 19.7rem;
-  }
-
- 
-
-  .create-special-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.4rem 0.1rem;
-  }
-
-  .background-img-div {
-    margin-top: 3rem;
-  }
-
-  .background-svg {
-    width: 2.6rem;
   }
 }
 
 @media screen and (max-width: 1700px) {
-  .windows-pop-up-message-div {
+  .service-div {
     width: 95%;
-    max-width: 45rem;
-    height: 10rem;
-    padding: 0 1rem;
-    font-size: 1.4rem;
-    row-gap: 1.5rem;
-  }
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.5rem;
 
-  .close-button {
-    font-size: 1.2rem;
-  }
-
-  .password-generator-headline {
-    font-size: 2rem;
-    margin: 7rem auto 0 auto;
-    width: 95%;
-    max-width: 35rem;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 2.2rem;
-  }
-
-  .password-generator-main-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95%;
-    max-width: 80rem;
-    column-gap: 3rem;
-    margin: 3rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin: 0;
-    width: 100%;
-    padding: 1.3rem 3%;
-    box-sizing: border-box;
-    row-gap: 0.7rem;
-  }
-
-  .create-generally-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 23rem;
-    padding: 1rem 0;
-  }
-
-  input {
-    width: 90%;
-    height: 2.3rem;
-    font-size: 1.5rem;
-    max-width: 19.7rem;
-  }
-
-
-
-  .create-special-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.4rem 0.1rem;
-  }
-
-  .background-img-div {
-    margin-top: 3rem;
-  }
-
-  .background-svg {
-    width: 2.2rem;
+    &__headline {
+      margin: 2rem 0 2.5rem 0;
+      padding: 0 3%;
+      font-size: 1.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 1400px) {
-  .windows-pop-up-message-div {
+  .service-div {
     width: 95%;
-    max-width: 37rem;
-    height: 10rem;
-    padding: 0 1rem;
-    font-size: 1.4rem;
-    row-gap: 1.5rem;
-  }
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.4rem;
 
-  .close-button {
-    font-size: 1.2rem;
-  }
-
-  .password-generator-headline {
-    font-size: 2rem;
-    margin: 5rem auto 0 auto;
-    width: 95%;
-    max-width: 35rem;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 2rem;
-  }
-
-  .password-generator-main-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95%;
-    max-width: 60rem;
-    column-gap: 1.5rem;
-    margin: 3rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin: 0;
-    width: 100%;
-    padding: 1.3rem 3%;
-    box-sizing: border-box;
-    row-gap: 0.7rem;
-  }
-
-  .create-generally-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 23rem;
-    padding: 1rem 0;
-  }
-
-  input {
-    width: 90%;
-    height: 2.1rem;
-    font-size: 1.5rem;
-    max-width: 19.7rem;
-  }
-
-  
-
-  .create-special-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.3rem 0.1rem;
-  }
-
-  .background-img-div {
-    margin-top: 3rem;
-  }
-
-  .background-svg {
-    width: 2rem;
+    &__headline {
+      margin: 1.5rem 0 2rem 0;
+      padding: 0 3%;
+      font-size: 1.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .windows-pop-up-message-div {
-    width: 95%;
-    max-width: 33rem;
-    height: 10rem;
-    padding: 0 1rem;
-    font-size: 1.3rem;
-    row-gap: 1.5rem;
-  }
-
-  .close-button {
-    font-size: 1.1rem;
-  }
-
-  .password-generator-headline {
-    font-size: 2rem;
-    margin: 3rem auto 0 auto;
-    width: 95%;
-    max-width: 35rem;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 1.8rem;
-  }
-
-  .password-generator-main-div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    width: 95%;
-    max-width: 35rem;
-    margin: 1rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;
-    margin: 0;
-    width: 100%;
-    padding: 1.3rem 3%;
-    box-sizing: border-box;
-    row-gap: 0.5rem;
-  }
-
-  .create-generally-password {
-    font-size: 1.3rem;
+  .service-div {
     width: 90%;
-    max-width: 23rem;
-    padding: 0.5rem 0;
-  }
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.4rem;
 
-  input {
-    width: 90%;
-    height: 2.3rem;
-    font-size: 1.5rem;
-    max-width: 19.7rem;
-  }
-
-  
-
-  .create-special-password {
-    font-size: 1.3rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.4rem 0.3rem;
-  }
-
-  
-
-  .background-svg {
-    width: 1.8rem;
+    &__headline {
+      margin: 1rem 0 1.5rem 0;
+      padding: 0 3%;
+      font-size: 1.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .windows-pop-up-message-div {
+  .service-div {
     width: 90%;
-    height: 10rem;
-    padding: 0.5rem 0.3rem;
-    font-size: 1.3rem;
-    row-gap: 1rem;
-  }
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.3rem;
 
-  .close-button {
-    font-size: 1rem;
-  }
-
-  .password-generator-headline {
-    font-size: 1.4rem;
-    margin: 3rem auto 0 auto;
-    width: 95%;
-    max-width: 25rem;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 1.6rem;
-  }
-
-  .password-generator-main-div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    width: 95%;
-    max-width: 40rem;
-    margin: 3rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    margin: 0;
-    width: 100%;
-    padding: 1.3rem 3%;
-    box-sizing: border-box;
-    row-gap: 0.5rem;
-  }
-
-  .create-generally-password {
-    font-size: 1.1rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.5rem 0.3rem;
-  }
-
-  input {
-    width: 90%;
-    height: 2rem;
-    max-width: 19.7rem;
-  }
-
-  .special-password-input-and-button-div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-  }
-
-  .create-special-password {
-    font-size: 1.1rem;
-    width: 90%;
-    max-width: 20rem;
-    padding: 0.5rem 0.3rem;
-  }
-
-  
-
-  .background-svg {
-    width: 1.6rem;
+    &__headline {
+      margin: 1rem 0 1.5rem 0;
+      padding: 0 3%;
+      font-size: 1.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 300px) {
-  .windows-pop-up-message-div {
+  .service-div {
     width: 90%;
-    height: 10rem;
-    padding: 0.5rem 0;
-    font-size: 1.3rem;
-    row-gap: 1rem;
-  }
+    margin: 0 1%;
+    padding: 0.5rem 0 1rem 0;
+    border-width: 0.3rem;
 
-  .close-button {
-    font-size: 1rem;
+    &__headline {
+      margin: 1rem 0 1.5rem 0;
+      padding: 0 3%;
+      font-size: 1.3rem;
+    }
   }
-
-  .password-generator-headline {
-    font-size: 1.4rem;
-    margin: 1rem auto 0 auto;
-    width: 95%;
-  }
-
-  .star-sign,
-  .lock-sign {
-    width: 1.4rem;
-  }
-
-  .password-generator-main-div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    width: 95%;
-    margin: 1rem auto 0 auto;
-  }
-
-  .generally-password-div,
-  .special-password-div {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    margin: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    box-sizing: border-box;
-  }
-
-  .create-generally-password {
-    font-size: 1.1rem;
-    width: 90%;
-    padding: 0.3rem 0.3rem;
-  }
-
-  input {
-    width: 90%;
-    height: 1.7rem;
-  }
-
-  .special-password-input-and-button-div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-  }
-
-  .create-special-password {
-    font-size: 1.1rem;
-    width: 90%;
-    padding: 0.3rem 0.3rem;
-  }
-
-  
-
-  .background-svg {
-    width: 1.4rem;
-  }
-}*/
+}

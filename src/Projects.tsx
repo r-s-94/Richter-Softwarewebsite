@@ -2,7 +2,7 @@ import "./Projects.scss";
 import WebsitesOverviewComponent from "./websitesOverview";
 import WebAplicationsOverviewComponent from "./web-aplicationsOverview";
 import PortfolioWebsiteOverviewComponent from "./portfolio-website";
-//import Service from "./service";
+import Service from "./service";
 
 export default function ProjectsComponent() {
   return (
@@ -14,11 +14,12 @@ export default function ProjectsComponent() {
         <WebAplicationsOverviewComponent />
       </div>
       <PortfolioWebsiteOverviewComponent />
+      <Service />
     </section>
   );
 
   /*
-  <Service />
+
   
   */
 }
