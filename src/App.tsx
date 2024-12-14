@@ -3,6 +3,7 @@ import "./App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Websites from "./component/websites/websites";
 import WebAplications from "./component/web-aplications/web-aplication";
+import Technologies from "./component/technologies/technologies";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ function App() {
     {
       path: "web-aplications",
       element: <WebAplications />,
+    },
+    {
+      path: "technologies",
+      element: <Technologies />,
     },
   ]);
 

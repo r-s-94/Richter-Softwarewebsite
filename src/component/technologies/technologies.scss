@@ -1,0 +1,550 @@
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin row-flex-direction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+@mixin project-button-properties {
+  border: 1px solid #222222;
+  background-color: #f3f5f6;
+  /*color: #81d4fa;*/
+  color: #006db5;
+  border-radius: 0.3rem;
+}
+
+@mixin project-button-hover-properties {
+  /*background-color: #006db5;*/
+  background-color: #e0e0e0;
+  color: #006db5;
+}
+
+.technology-div {
+  &__headline {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0 1rem 0;
+  }
+
+  &__back-button {
+    @include project-button-properties();
+    width: 9rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+    margin: 3rem 0 3rem 10rem;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  &__technology-overview-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    @include gray-border-for-section();
+    padding: 3rem 10rem;
+    margin: 0 3rem 1rem 3rem;
+    row-gap: 3rem;
+    background-color: white;
+    border-radius: 0.3rem;
+  }
+
+  &__markup-language-div,
+  &__programming-language-div,
+  &__framework-div,
+  &__version-control-div,
+  &__backend-service-div {
+    @include column-flex-direction();
+  }
+
+  &__technology-headline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subdivision-div {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  &__html-div,
+  &__css-div,
+  &__scss-div,
+  &__javascript-div,
+  &__typescript-div,
+  &__react-div,
+  &__git-div,
+  &__supabase-div {
+    @include column-flex-direction();
+  }
+
+  span {
+    font-size: 1.4rem;
+  }
+
+  &__img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .technology-div {
+    padding-bottom: 1.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 3rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2rem;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 3rem 15%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      width: 90%;
+      margin: 0 auto 2rem auto;
+      padding: 5rem 1.5%;
+      row-gap: 5rem;
+      border-width: 0.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1.7rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .technology-div {
+    padding-bottom: 1.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 3rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2rem;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 2rem 15%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 90%;
+      margin: 0 auto 2rem auto;
+      padding: 3rem 1.5%;
+      row-gap: 3rem;
+      border-width: 0.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1.7rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .technology-div {
+    padding-bottom: 1.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 3rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2rem;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 2rem 15%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      display: grid;
+      grid-template-columns: auto auto;
+      width: 90%;
+      margin: 0 auto 2rem auto;
+      padding: 3rem 5%;
+      column-gap: 0;
+      row-gap: 3rem;
+      border-width: 0.4rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1.7rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .technology-div {
+    padding-bottom: 1.5rem;
+
+    &__headline {
+      font-size: 2rem;
+      margin: 3rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 8rem;
+      height: 2rem;
+      font-size: 1.4rem;
+      margin: 1.5rem 0 2rem 25%;
+    }
+
+    &__icon {
+      width: 1.7rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      display: grid;
+      grid-template-columns: auto;
+      width: 90%;
+      margin: 0 auto 2rem auto;
+      padding: 3rem 1.5%;
+      row-gap: 3rem;
+      border-width: 0.4rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1.7rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .technology-div {
+    &__headline {
+      font-size: 1.7rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 6.5rem;
+      height: 1.8rem;
+      font-size: 1.1rem;
+      margin: 1.5rem 0 1.5rem 35%;
+    }
+
+    &__icon {
+      width: 1.5rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      @include column-flex-direction();
+      width: 90%;
+      margin: 0 auto 2rem auto;
+      padding: 1.5rem 1.5%;
+      row-gap: 1.5rem;
+      border-width: 0.3rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
+
+    &__img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .technology-div {
+    &__headline {
+      font-size: 1.3rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    &__back-button {
+      @include project-button-properties();
+      width: 6rem;
+      height: 1.8rem;
+      font-size: 0.9rem;
+      margin: 1rem 0 1.5rem 27%;
+    }
+
+    &__icon {
+      width: 1.2rem;
+      height: auto;
+    }
+
+    &__technology-overview-div {
+      @include column-flex-direction();
+      width: 90%;
+      margin: 0 auto 1rem auto;
+      padding: 1.3rem 1.5%;
+      row-gap: 1.3rem;
+      border-width: 0.3rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__backend-service-div {
+      @include column-flex-direction();
+    }
+
+    &__technology-headline {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__subdivision-div {
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__git-div,
+    &__supabase-div,
+    &__img-div {
+      @include column-flex-direction();
+      row-gap: 0.5rem;
+    }
+
+    span {
+      font-size: 1.1rem;
+    }
+
+    &__img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

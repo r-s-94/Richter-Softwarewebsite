@@ -99,34 +99,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(50px);
+    transform: translateZ(51px);
   }
 
   .back {
-    transform: translateZ(-50px);
+    transform: translateZ(-51px);
   }
 
   .left {
     @include center-content();
-    margin-left: -50px;
+    margin-left: -51px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 50px;
+    margin-left: 51px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -50px;
+    margin-top: -51px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 50px;
+    margin-top: 51px;
     transform: rotateX(-90deg);
   }
 }
@@ -154,34 +154,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(50px);
+    transform: translateZ(51px);
   }
 
   .back {
-    transform: translateZ(-50px);
+    transform: translateZ(-51px);
   }
 
   .left {
     @include center-content();
-    margin-left: -50px;
+    margin-left: -51px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 50px;
+    margin-left: 51px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -50px;
+    margin-top: -51px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 50px;
+    margin-top: 51px;
     transform: rotateX(-90deg);
   }
 }
@@ -209,34 +209,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(50px);
+    transform: translateZ(51px);
   }
 
   .back {
-    transform: translateZ(-50px);
+    transform: translateZ(-51px);
   }
 
   .left {
     @include center-content();
-    margin-left: -50px;
+    margin-left: -51px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 50px;
+    margin-left: 51px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -50px;
+    margin-top: -51px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 50px;
+    margin-top: 51px;
     transform: rotateX(-90deg);
   }
 }
@@ -264,34 +264,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(37px);
+    transform: translateZ(38px);
   }
 
   .back {
-    transform: translateZ(-37px);
+    transform: translateZ(-38px);
   }
 
   .left {
     @include center-content();
-    margin-left: -37px;
+    margin-left: -38px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 37px;
+    margin-left: 38px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -37px;
+    margin-top: -38px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 37px;
+    margin-top: 38px;
     transform: rotateX(-90deg);
   }
 }
@@ -320,34 +320,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(27px);
+    transform: translateZ(28px);
   }
 
   .back {
-    transform: translateZ(-27px);
+    transform: translateZ(-28px);
   }
 
   .left {
     @include center-content();
-    margin-left: -27px;
+    margin-left: -28px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 27px;
+    margin-left: 28px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -27px;
+    margin-top: -28px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 27px;
+    margin-top: 28px;
     transform: rotateX(-90deg);
   }
 }
@@ -376,34 +376,34 @@
 
   .front {
     @include center-content();
-    transform: translateZ(17px);
+    transform: translateZ(18px);
   }
 
   .back {
-    transform: translateZ(-17px);
+    transform: translateZ(-18px);
   }
 
   .left {
     @include center-content();
-    margin-left: -17px;
+    margin-left: -18px;
     transform: rotateY(-90deg);
   }
 
   .right {
     @include center-content();
-    margin-left: 17px;
+    margin-left: 18px;
     transform: rotateY(90deg);
   }
 
   .top {
     @include center-content();
-    margin-top: -17px;
+    margin-top: -18px;
     transform: rotateX(90deg);
   }
 
   .bottom {
     @include center-content();
-    margin-top: 17px;
+    margin-top: 18px;
     transform: rotateX(-90deg);
   }
 }

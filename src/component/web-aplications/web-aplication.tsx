@@ -11,7 +11,7 @@ import CRM_Program_Companyreport_IMG from "../../assets/CRM-Programm Bilanz.png"
 
 export default function WebAplications() {
   return (
-    <div className="web-aplications-div">
+    <div id="web-aplication-div" className="web-aplications-div">
       <h2 className="web-aplications-div__headline">
         Web-
         <wbr />
@@ -152,6 +152,15 @@ export default function WebAplications() {
           </div>
         </div>
       </div>
+
+      <a
+        href="#web-aplication-div"
+        className="web-aplications-div__to-top-link link"
+      >
+        {" "}
+        <button className="web-aplications-div__to-top-button button"></button>
+        nach Oben
+      </a>
     </div>
   );
 

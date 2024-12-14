@@ -1,0 +1,130 @@
+.nav-section {
+  width: 94%;
+  height: 4rem;
+  margin: 0 auto;
+  background-image: url(./assets/cosmos-1853491_1280.jpg);
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+  }
+
+  &__link {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .nav-section {
+    width: 94%;
+    height: 5rem;
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 13rem;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .nav-section {
+    width: 93%;
+    height: 5rem;
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10rem;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-section {
+    width: 93%;
+    height: 4.5rem;
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 7rem;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-section {
+    width: 93%;
+    height: 4.5rem;
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5rem;
+    }
+
+    &__link {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-section {
+    width: 93%;
+    height: 7.5rem;
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 0.5rem;
+    }
+
+    &__link {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .nav-section {
+    width: 93%;
+    height: 6.5rem;
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 0.5rem;
+    }
+
+    &__link {
+      font-size: 1rem;
+    }
+  }
+}
