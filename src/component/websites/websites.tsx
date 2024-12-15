@@ -32,11 +32,6 @@ export default function Websites() {
         <div className="websites-div__website-project">
           <p className="websites-div__project-headline">Solid Bank</p>
           <img src={SoldiBank_IMG} className="websites-div__img-half" alt="" />
-          <a href="" className="link">
-            <button className="websites-div__soldi-bank-button button">
-              zu Solid Bank
-            </button>
-          </a>
         </div>
 
         <div className="websites-div__website-project">
@@ -57,6 +52,10 @@ export default function Websites() {
   );
 
   /*
-   
+    <a href="" className="link">
+            <button className="websites-div__soldi-bank-button button">
+              zu Solid Bank
+            </button>
+          </a>
   */
 }

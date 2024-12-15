@@ -20,7 +20,7 @@ export default function PortfolioWebsiteOverviewComponent() {
         className="portfolio-website-div__link link"
       >
         <button className="portfolio-website-div__button button">
-          zu Portfoliowebseite
+          zur Portfoliowebseite
         </button>
       </a>
     </div>
