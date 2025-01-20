@@ -1,7 +1,7 @@
 import "./decorationComponent.scss";
 import DecorationIMG1 from "./assets/Programmierbild 2.jpg";
 import DecorationIMG2 from "./assets/technology-7111804_640.jpg";
-import DecorationIMG3 from "./assets/patrick-robert-doyle--az9Mp5WAeE-unsplash.jpg";
+import DecorationIMG3 from "./assets/file-KG3paS7JjpkgXfh2EsMiYM.webp";
 
 export default function DecorationComponent() {
   return (
