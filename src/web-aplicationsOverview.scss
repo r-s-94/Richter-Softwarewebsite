@@ -30,7 +30,7 @@
 }
 
 .web-aplications-overview-div {
-  @include gray-border-for-section();
+  border: 0.1rem solid #dbdbdb;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
   align-items: center;
   padding: 1rem 0 2rem 0;
   margin: 0 1rem;
+  border-radius: 0.2rem;
   @include box-adjustment();
 
   &__headline {
@@ -75,7 +76,6 @@
 
 @media screen and (min-width: 1700px) {
   .web-aplications-overview-div {
-    border-width: 0.5rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,6 @@
 
 @media screen and (max-width: 1700px) {
   .web-aplications-overview-div {
-    border-width: 0.5rem;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -151,7 +150,6 @@
 
 @media screen and (max-width: 1400px) {
   .web-aplications-overview-div {
-    border-width: 0.4rem;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -189,7 +187,6 @@
 
 @media screen and (max-width: 1000px) {
   .web-aplications-overview-div {
-    border-width: 0.4rem;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -218,7 +215,7 @@
     }
 
     &__button {
-      width: 15rem;
+      width: 16rem;
       height: 2.3rem;
       font-size: 1.1rem;
     }
@@ -227,8 +224,7 @@
 
 @media screen and (max-width: 600px) {
   .web-aplications-overview-div {
-    border-width: 0.3rem;
-    width: 90%;
+    width: 91%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,8 +261,7 @@
 
 @media screen and (max-width: 300px) {
   .web-aplications-overview-div {
-    border-width: 0.3rem;
-    width: 90%;
+    width: 91%;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -32,10 +32,11 @@
 }
 
 .technology-section {
-  @include gray-border-for-section();
+  /*box-shadow: 0.2rem 0.2rem 0.5rem 0.3rem #e0e0e0;*/
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);
   @include column-flex-direction();
-  border-radius: 0;
-  background-color: #f3f5f6;
+  border-radius: 0.2rem;
+  background-color: white;
   padding: 3rem 10rem;
   margin: 0 3rem 1rem 3rem;
 
@@ -52,7 +53,8 @@
     width: 100%;
     row-gap: 1rem;
     background-color: white;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #e0e0e0;
   }
 
   &__markup-div,
@@ -97,9 +99,8 @@
 
 @media screen and (min-width: 1700px) {
   .technology-section {
-    padding: 3rem 0 2.5rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.5rem;
+    padding: 3rem 0;
+    margin: 5rem 3.5%;
 
     &__headline {
       font-size: 2rem;
@@ -111,7 +112,7 @@
       justify-content: space-around;
       align-items: center;
       padding: 3rem 1.5%;
-      width: 93%;
+      width: 87%;
       row-gap: 1rem;
     }
 
@@ -149,9 +150,8 @@
 
 @media screen and (max-width: 1700px) {
   .technology-section {
-    padding: 3rem 0 2rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.5rem;
+    padding: 3rem 0;
+    margin: 4.5rem 3%;
 
     &__headline {
       font-size: 2rem;
@@ -202,8 +202,7 @@
 @media screen and (max-width: 1400px) {
   .technology-section {
     padding: 3rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.4rem;
+    margin: 4rem 3%;
 
     &__headline {
       font-size: 2rem;
@@ -253,8 +252,7 @@
 @media screen and (max-width: 1000px) {
   .technology-section {
     padding: 3rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.4rem;
+    margin: 3.5rem 3%;
 
     &__headline {
       font-size: 1.7rem;
@@ -303,8 +301,7 @@
 @media screen and (max-width: 600px) {
   .technology-section {
     padding: 2rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.3rem;
+    margin: 2.5rem 3%;
 
     &__headline {
       font-size: 1.5rem;
@@ -352,8 +349,7 @@
 @media screen and (max-width: 300px) {
   .technology-section {
     padding: 1.3rem 0;
-    margin: 0 3% 1rem 3%;
-    border-width: 0.3rem;
+    margin: 1.7rem 3%;
 
     &__headline {
       font-size: 1.3rem;

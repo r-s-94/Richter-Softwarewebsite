@@ -54,10 +54,11 @@
   }
 
   &__web-aplications-overview-div {
-    @include gray-border-for-section();
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);
     @include column-flex-direction();
-    width: 100%;
     padding: 0 3rem;
+    background-color: white;
+    border-radius: 0.2rem;
   }
 
   &__small-web-aplication-div {
@@ -65,15 +66,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 0.2rem;
   }
 
   &__big-web-aplication-div {
     width: 100%;
+    border-radius: 0.2rem;
   }
 
   &__web-aplication-project {
     @include column-flex-direction();
-    box-shadow: 0.1rem 0.1rem 0.3rem 0.3rem #e0e0e0;
+    /*box-shadow: 0.1rem 0.1rem 0.3rem 0.3rem #e0e0e0;*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);
     margin: 2rem 0;
     padding: 1.5rem 1.5rem;
     border-radius: 0.1rem;
@@ -97,7 +101,7 @@
     height: 20rem;
     width: auto;
     border-radius: 0.3rem;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #dbdbdb;
   }
 
   &__img {
@@ -189,8 +193,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.5rem;
+      padding: 1.7rem 1%;
     }
 
     &__small-web-aplication-div {
@@ -306,8 +309,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.5rem;
+      padding: 1.5rem 1%;
     }
 
     &__small-web-aplication-div {
@@ -423,8 +425,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.4rem;
+      padding: 1.3rem 1%;
     }
 
     &__small-web-aplication-div {
@@ -539,8 +540,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.4rem;
+      padding: 1rem 1%;
     }
 
     &__small-web-aplication-div {
@@ -653,8 +653,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.3rem;
+      padding: 0.7rem 1%;
     }
 
     &__small-web-aplication-div {
@@ -767,8 +766,7 @@
 
     &__web-aplications-overview-div {
       @include column-flex-direction();
-      padding: 0 1%;
-      border-width: 0.3rem;
+      padding: 0.5rem 1%;
     }
 
     &__small-web-aplication-div {

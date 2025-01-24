@@ -12,11 +12,12 @@
 }
 
 .service-div {
-  @include gray-border-for-section();
+  border: 0.1rem solid #dbdbdb;
   @include column-flex-direction();
   width: 95%;
   padding: 1rem 0 0 0;
   margin: 0;
+  border-radius: 0.2rem;
 
   &__headline {
     margin: 2rem 0;
@@ -30,7 +31,6 @@
     width: 98%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.5rem;
 
     &__headline {
       margin: 2rem 0 2.5rem 0;
@@ -45,7 +45,6 @@
     width: 95%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.5rem;
 
     &__headline {
       margin: 2rem 0 2.5rem 0;
@@ -60,7 +59,6 @@
     width: 95%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.4rem;
 
     &__headline {
       margin: 1.5rem 0 2rem 0;
@@ -75,7 +73,6 @@
     width: 90%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.4rem;
 
     &__headline {
       margin: 1rem 0 1.5rem 0;
@@ -90,7 +87,6 @@
     width: 90%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.3rem;
 
     &__headline {
       margin: 1rem 0 1.5rem 0;
@@ -105,7 +101,6 @@
     width: 90%;
     margin: 0 1%;
     padding: 0.5rem 0 1rem 0;
-    border-width: 0.3rem;
 
     &__headline {
       margin: 1rem 0 1.5rem 0;
