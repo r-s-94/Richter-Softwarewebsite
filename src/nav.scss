@@ -84,7 +84,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: 5rem;
+      column-gap: 4rem;
     }
 
     &__link {
@@ -96,7 +96,7 @@
 @media screen and (max-width: 600px) {
   .nav-section {
     width: 94%;
-    height: 7.5rem;
+    height: 9.5rem;
 
     &__nav {
       display: flex;
@@ -115,7 +115,7 @@
 @media screen and (max-width: 300px) {
   .nav-section {
     width: 94%;
-    height: 6.5rem;
+    height: 8rem;
 
     &__nav {
       display: flex;
