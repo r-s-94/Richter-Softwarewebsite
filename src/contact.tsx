@@ -36,12 +36,6 @@ export default function Contact() {
           </a>
         </p>
       </div>
-
-      <p>&copy; richter-websoftware.de</p>
-
-      <a href="#oben" className="contact-section__to-top link">
-        nach oben
-      </a>
     </section>
   );
 }

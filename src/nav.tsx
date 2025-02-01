@@ -13,6 +13,9 @@ export default function Nav() {
         <a href="#contact" className="nav-section__link link">
           Kontakte
         </a>
+        <a href="#footer" className="nav-section__link link">
+          Impressum
+        </a>
       </nav>
     </section>
   );
